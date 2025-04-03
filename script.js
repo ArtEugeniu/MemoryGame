@@ -1,3 +1,7 @@
+const tutorialCloseBtn = document.querySelector('.close-tutorial-btn');
+const tutorialBlock = document.querySelector('.rules-controls');
+const tutorialOpenBtn = document.querySelector('.open-tutorial-btn');
+
 const fieldArr = [1, 2, 3, 4, 5, 6, 7, 8];
 fieldArr.sort((a, b) => Math.random() - 0.5);
 const keys = ['ArrowDown', 'ArrowUp', 'ArrowLeft', 'ArrowRight', 'Enter', ' ', 'r'];
@@ -87,3 +91,11 @@ const pressKey = (event) => {
 }
 
 fieldInit();
+
+tutorialCloseBtn.addEventListener('click', () => {
+  tutorialBlock.classList.add('close-tutorial');
+})
+
+tutorialOpenBtn.addEventListener('click', () => {
+  tutorialBlock.classList.remove('close-tutorial');
+})

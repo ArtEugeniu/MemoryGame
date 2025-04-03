@@ -3,8 +3,8 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Sprint 14. JS24/2 - itgid.info</title>
-  <meta name="author" content="itgid.info">
+  <title>MemoryGame</title>
+  <meta name="ArtE" content="game">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,25 +14,50 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/skeleton.css">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <link rel="stylesheet" href="css/night.css"> -->
-  <link rel="icon" type="image/svg+xml" href="https://itgid.info/favicon.ico">
 </head>
 
 <body>
 
-  <div class="container">
-    <div class="row">
-      <div class="one-column">
-        <h1 >Привет</h1>
-        <h2>Развивай память!</h2>
-        <div class="gamefield"></div>
-        <!-- <div class="message__1">Ошибка! <p>Права на ошибку больше нет</p></div> -->
-        
+  <div class="wrapper">
+    <div class="container">
+      <div class="row">
+        <div class="one-column">
+          <h1>Memory Game</h1>
+          <h2 class="subtitle">Improve your memory!</h2>
+          <div class="gamefield"></div>
+        </div>
       </div>
+
     </div>
+    <div class="rules-controls">
+      <div class="rules-block">
+        <h2 class="rules-title">Rules</h2>
+        <ul class="rules-list">
+          <li class="rules-item">You need to remember the numbers in eight cells.</li>
+          <li class="rules-item">The numbers range from 1 to 8 and are placed randomly.</li>
+          <li class="rules-item">Your task is to open the cells in the correct order, from 1 to 8.</li>
+          <li class="rules-item">If you select the wrong number once, you get another chance.</li>
+          <li class="rules-item">If you make a second mistake, the game resets, and you have to start over.</li>
+        </ul>
+      </div>
+      <div class="controls-block">
+        <h2 class="controls-title">Controls</h2>
+        <div class="arrows">
+          <img src="images/arrow-keys.jpg" alt="">
+          <h3>Move between cells</h3>
+        </div>
+        <div class="arrows">
+          <img src="images/space-button-icon.svg" alt="">
+          <h3 class="spacebar-title">Open a cell</h3>
+        </div>
+      </div>
+
+      <button type="button" class="close-tutorial-btn"></button>
+    </div>
+    <button class="open-tutorial-btn">Show Rules</button>
   </div>
 
-  <script src="./sprint_14.js"></script>
+  <script src="./script.js"></script>
 </body>
 
 </html>
